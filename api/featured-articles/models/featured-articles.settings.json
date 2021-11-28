@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "featured_articles",
+  "info": {
+    "name": "Featured Articles",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "articles": {
+      "via": "featured_article",
+      "collection": "article"
+    },
+    "Name": {
+      "type": "string"
+    }
+  }
+}
